@@ -810,6 +810,29 @@ h2 span {
   background: var(--soft);
 }
 
+.breadcrumbs {
+  align-items: center;
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+.breadcrumbs a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--green-dark);
+}
+
+.breadcrumbs span {
+  color: var(--ink);
+}
+
 .page-hero h1 {
   max-width: 850px;
 }
