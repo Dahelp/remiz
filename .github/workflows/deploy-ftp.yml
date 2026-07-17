@@ -19,10 +19,13 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: radio.gohost.ru
+          protocol: ftp
+          port: 21
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: www/remizmebel.ru/
+          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
