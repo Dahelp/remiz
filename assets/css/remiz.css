@@ -453,12 +453,12 @@ h2 span {
   background: var(--soft) center / cover;
 }
 
-.photo.kitchen-1 { background-image: url("../images/kitchen-modern-placeholder.png"); }
-.photo.kitchen-2 { background-image: url("../images/kitchen-modern-placeholder.png"); background-position: center 42%; }
-.photo.kitchen-3 { background-image: url("../images/kitchen-modern-placeholder.png"); background-position: right center; }
-.photo.kitchen-4 { background-image: url("../images/kitchen-modern-placeholder.png"); background-position: left center; }
-.photo.kitchen-5 { background-image: url("../images/wardrobe-placeholder.png"); }
-.photo.kitchen-6 { background-image: url("../images/wardrobe-placeholder.png"); background-position: right center; }
+.photo.kitchen-1 { background-image: url("../images/projects/real-kitchen-tss-1.jpg"); }
+.photo.kitchen-2 { background-image: url("../images/projects/real-kitchen-velvet-1.jpg"); background-position: center 42%; }
+.photo.kitchen-3 { background-image: url("../images/projects/real-kitchen-fenix-1.jpg"); background-position: center; }
+.photo.kitchen-4 { background-image: url("../images/projects/real-kitchen-tss-2.jpg"); background-position: center; }
+.photo.kitchen-5 { background-image: url("../images/projects/real-wardrobe-bravo-1.jpg"); background-position: center; }
+.photo.kitchen-6 { background-image: url("../images/projects/real-wardrobe-integro-1.jpg"); background-position: center; }
 
 .catalog-card .body,
 .project-card .body,
