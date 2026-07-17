@@ -717,6 +717,13 @@ h2 span {
   grid-column: 1 / -1;
 }
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .field label {
   font-size: 13px;
   font-weight: 900;
@@ -743,6 +750,11 @@ h2 span {
   margin-top: 2px;
 }
 
+.form-panel .btn:disabled {
+  cursor: wait;
+  opacity: .72;
+}
+
 .field input:focus,
 .field select:focus,
 .field textarea:focus {
@@ -754,6 +766,43 @@ h2 span {
   color: var(--muted);
   font-size: 12px;
   margin: 12px 0 0;
+}
+
+.form-status {
+  color: var(--green-dark);
+  font-size: 14px;
+  font-weight: 800;
+  margin: 12px 0 0;
+  min-height: 22px;
+}
+
+.contact-form-wide {
+  grid-column: 1 / -1;
+}
+
+.send-result {
+  align-items: center;
+  background: var(--soft);
+  display: flex;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.send-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 34px;
+}
+
+.send-card h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(34px, 6vw, 58px);
+  line-height: .98;
+  margin: 26px 0 16px;
 }
 
 .page-hero {

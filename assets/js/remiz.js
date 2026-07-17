@@ -29,3 +29,32 @@ if (calc) {
     price.textContent = `от ${total.toLocaleString("ru-RU")} ₽`;
   });
 }
+
+document.querySelectorAll("[data-lead-form]").forEach((form) => {
+  const status = form.querySelector(".form-status");
+  const submit = form.querySelector("button[type='submit']");
+
+  form.addEventListener("submit", async (event) => {
+    if (!window.fetch || !window.FormData) return;
+    event.preventDefault();
+
+    if (status) status.textContent = "Отправляем заявку...";
+    if (submit) submit.disabled = true;
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { "X-Requested-With": "XMLHttpRequest" },
+      });
+
+      if (!response.ok) throw new Error("send failed");
+      form.reset();
+      if (status) status.textContent = "Заявка отправлена. Мы свяжемся с вами в ближайшее рабочее время.";
+    } catch (error) {
+      if (status) status.textContent = "Не удалось отправить форму. Позвоните: +7 (995) 301-58-58.";
+    } finally {
+      if (submit) submit.disabled = false;
+    }
+  });
+});

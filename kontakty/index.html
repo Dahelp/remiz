@@ -7,6 +7,22 @@
   <meta name="description" content="Контакты Кухни РЕМИЗ: телефоны, почта и адреса шоурумов в Москве на МКАД 24-й километр и улице Кировоградская, 11 к. 1.">
   <link rel="canonical" href="https://remizmebel.ru/kontakty/">
   <link rel="stylesheet" href="../assets/css/remiz.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FurnitureStore",
+    "name": "Кухни Ремиз",
+    "url": "https://remizmebel.ru/kontakty/",
+    "email": "kuhniremiz@mail.ru",
+    "telephone": ["+7-995-301-58-58", "8-800-201-86-93", "+7-926-212-86-77"],
+    "openingHours": "Mo-Su 10:00-21:00",
+    "address": [
+      {"@type": "PostalAddress", "addressLocality": "Москва", "streetAddress": "МКАД 24-й километр, дом 1, ТЦ Твой Дом, 2 этаж"},
+      {"@type": "PostalAddress", "addressLocality": "Москва", "streetAddress": "улица Кировоградская, дом 11, корпус 1, МТК АрмадаХоум, 3 этаж"}
+    ],
+    "areaServed": "Москва и Московская область"
+  }
+  </script>
 </head>
 <body>
   <div class="topline"><div class="wrap"><span>Контакты РЕМИЗ</span><span>Запись на замер и расчёт</span></div></div>
@@ -26,6 +42,20 @@
         <div class="contact-line"><b>г. Москва, МКАД 24-й километр, д. 1</b><span>ТЦ «Твой Дом», 2 этаж, студия «Кухни Ремиз»</span></div>
         <div class="contact-line"><b>г. Москва, ул. Кировоградская, д. 11, к. 1</b><span>МТК «АрмадаХоум», 3 этаж, студия «Кухни Ремиз»</span></div>
       </div>
+      <form class="form-panel contact-form-wide" action="../send.php" method="post" data-lead-form>
+        <div class="form-grid">
+          <input type="hidden" name="source" value="Страница контактов">
+          <div class="field hp-field"><label for="contact-website">Сайт</label><input id="contact-website" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="field"><label for="contact-name">Имя</label><input id="contact-name" name="name" autocomplete="name" placeholder="Как к вам обращаться" required></div>
+          <div class="field"><label for="contact-phone">Телефон</label><input id="contact-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required></div>
+          <div class="field"><label for="contact-type">Что нужно</label><select id="contact-type" name="type"><option>Кухня на заказ</option><option>Шкаф или гардеробная</option><option>Мебель для ванной</option><option>Комплексная мебель для квартиры</option></select></div>
+          <div class="field"><label for="contact-budget">Бюджет</label><select id="contact-budget" name="budget"><option>Нужен расчёт</option><option>до 300 000 ₽</option><option>300 000 - 700 000 ₽</option><option>от 700 000 ₽</option></select></div>
+          <div class="field full"><label for="contact-comment">Комментарий</label><textarea id="contact-comment" name="comment" rows="4" placeholder="Размеры, материалы, адрес объекта, ссылка на проект или фото"></textarea></div>
+        </div>
+        <button class="btn btn-primary" type="submit">Отправить заявку</button>
+        <p class="form-status" aria-live="polite"></p>
+        <p class="policy">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+      </form>
     </div></section>
   </main>
   <footer class="footer"><div class="wrap"><div class="footer-bottom"><span>© 2019-2026 Кухни Ремиз</span><span><a href="../">Главная</a> · <a href="../catalog/">Каталог</a></span></div></div></footer>
