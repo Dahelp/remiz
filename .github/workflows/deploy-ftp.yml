@@ -28,8 +28,8 @@ jobs:
           server-dir: www/remizmebel.ru/
           log-level: verbose
           exclude: |
-            **/.git*
-            **/.git*/**
+            **/.git/**
+            **/.gitignore
             **/.github/**
             **/.agents/**
             **/concept-*/**

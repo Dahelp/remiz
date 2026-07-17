@@ -1,0 +1,9 @@
+DirectoryIndex index.html index.php
+Options -Indexes
+
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
