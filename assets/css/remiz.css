@@ -448,6 +448,13 @@ h2 span {
   overflow: hidden;
 }
 
+.card-link {
+  color: inherit;
+  display: grid;
+  min-height: 100%;
+  text-decoration: none;
+}
+
 .photo {
   min-height: 210px;
   background: var(--soft) center / cover;
