@@ -528,12 +528,15 @@ h2 span {
 }
 
 .calc-panel {
-  align-self: center;
+  align-self: stretch;
   border-radius: var(--radius);
   background: var(--white);
   padding: 34px;
   color: var(--ink);
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .calc-panel h3 {
@@ -579,7 +582,7 @@ h2 span {
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  margin-top: 22px;
+  margin-top: auto;
   border-top: 1px solid var(--line);
   padding-top: 18px;
 }
