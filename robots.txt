@@ -1,5 +1,5 @@
 User-agent: *
-Allow: /
+Disallow: /
 
 Host: remizmebel.ru
 Sitemap: https://remizmebel.ru/sitemap.xml
